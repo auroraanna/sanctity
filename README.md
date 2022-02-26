@@ -1,6 +1,6 @@
 # sanctity 🌈
 
-![screenshot](screenshot.png)
+![screenshot](https://codeberg.org/papojari/sanctity/media/branch/main/screenshot.png)
 
 **sanctity** is an acronym for ru**s**t **an**si16 **c**olor **t**est ut**i**li**ty**.
 
