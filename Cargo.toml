@@ -1,7 +1,12 @@
 [package]
 name = "sanctity"
 version = "0.1.0"
+authors = ["papojari <papojari-git.ovoid@aleeas.com"]
 edition = "2021"
+description = "rust ansi16 color test utility"
+license = "LGPL-3.0"
+repository = "https://codeberg.org/papojari/sanctity"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
