@@ -23,6 +23,7 @@ struct Args {
 fn main() {
     let args = Args::parse();
     let text = args.text;
+    let layout = args.layout;
 
     let ansi16 = [
         (Color::Black),
@@ -42,8 +43,6 @@ fn main() {
         (Color::LightGray),
         (Color::White),
     ];
-
-    let layout = args.layout;
 
     if layout == "column" {
         for color in ansi16 {
