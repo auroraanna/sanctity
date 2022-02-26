@@ -34,6 +34,10 @@ fn main() {
     ];
 
     for color in ansi16 {
-        println!("{}", text.clone().color(color));
+        let column_color = color;
+        for color in ansi16 {
+            print!("{}", text.clone().bg_color(color).color(column_color));
+        };
+        println!();
     };
 }
