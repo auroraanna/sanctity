@@ -8,6 +8,10 @@ struct Args {
     /// Text that will be used to test the colors.
     #[clap(long, short, default_value = " ••• ")]
     text: String,
+
+    /// Print the background colors in either columns or rows.
+    #[clap(long, short, possible_values = ["column", "row"], default_value = "column")]
+    layout: String,
 }
 
 fn main() {
@@ -33,11 +37,23 @@ fn main() {
         (Color::White),
     ];
 
-    for color in ansi16 {
-        let column_color = color;
+    let layout = args.layout;
+
+    if layout == "column" {
         for color in ansi16 {
-            print!("{}", text.clone().bg_color(color).color(column_color));
+            let column_color = color;
+            for color in ansi16 {
+                print!("{}", text.clone().bg_color(color).color(column_color));
+            };
+            println!();
         };
-        println!();
+    } else {
+        for color in ansi16 {
+            let column_color = color;
+            for color in ansi16 {
+                print!("{}", text.clone().bg_color(column_color).color(color));
+            };
+            println!();
+        };
     };
 }
