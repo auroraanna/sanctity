@@ -1,3 +1,9 @@
+// This file is part of the sanctity source code.
+//
+// ©️ 2022 papojari <mailto:papojari-git.ovoid@aleeas.com> <https://matrix.to/#/@papojari:artemislena.eu> <https://papojari.codeberg.page>
+//
+// For the license information, please view the README.md file that was distributed with this source code.
+
 use clap::Parser;
 use colorful::Colorful;
 use colorful::Color;
