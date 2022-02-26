@@ -1,6 +1,6 @@
 # sanctity 🌈
 
-![screenshot](screenshot.webp)
+![screenshot](screenshot.png)
 
 **sanctity** is an acronym for ru**s**t **an**si16 **c**olor **t**est ut**i**li**ty**.
 
