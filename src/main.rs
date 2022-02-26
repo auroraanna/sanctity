@@ -25,6 +25,7 @@ fn main() {
     let text = args.text;
     let layout = args.layout;
 
+    // Define ansi16 colors.
     let ansi16 = [
         (Color::Black),
         (Color::DarkGray),
@@ -44,8 +45,11 @@ fn main() {
         (Color::White),
     ];
 
+    // Print the test with the background colors in column or rows.
     if layout == "column" {
+        // Do the below comment but 16 times with a different color for the text each time.
         for color in ansi16 {
+            // Print a row of text in one color with every background color.
             let column_color = color;
             for color in ansi16 {
                 print!("{}", text.clone().bg_color(color).color(column_color));
@@ -53,7 +57,9 @@ fn main() {
             println!();
         };
     } else {
+        // Do the below comment but 16 times with a different background color each time.
         for color in ansi16 {
+            // Print a row of text in every color with only one background color.
             let column_color = color;
             for color in ansi16 {
                 print!("{}", text.clone().bg_color(column_color).color(color));
