@@ -1,6 +1,6 @@
 [package]
 name = "sanctity"
-version = "1.2.0"
+version = "1.2.1"
 authors = ["papojari <papojari-git.ovoid@aleeas.com"]
 edition = "2021"
 description = "rust ansi16 color test utility"

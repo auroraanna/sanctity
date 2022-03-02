@@ -168,7 +168,7 @@ dependencies = [
 
 [[package]]
 name = "sanctity"
-version = "0.1.1"
+version = "1.2.1"
 dependencies = [
  "clap",
  "recolored",
