@@ -1,6 +1,6 @@
 [package]
 name = "sanctity"
-version = "0.7.2"
+version = "1.2.0"
 authors = ["papojari <papojari-git.ovoid@aleeas.com"]
 edition = "2021"
 description = "rust ansi16 color test utility"
@@ -12,4 +12,4 @@ readme = "README.md"
 
 [dependencies]
 clap = { version = "3.1.2", features = ["derive"] }
-colorful = "0.2.1"
+recolored = "1.9.3"

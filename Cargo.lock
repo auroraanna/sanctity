@@ -56,12 +56,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "colorful"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0bca1619ff57dd7a56b58a8e25ef4199f123e78e503fe1653410350a1b98ae65"
-
-[[package]]
 name = "hashbrown"
 version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -162,11 +156,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "recolored"
+version = "1.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1584c92dd8a87686229f766bb3a62d263a90c47c81e45a49f1a6d684a1b7968d"
+dependencies = [
+ "atty",
+ "lazy_static",
+ "winapi",
+]
+
+[[package]]
 name = "sanctity"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "clap",
- "colorful",
+ "recolored",
 ]
 
 [[package]]
