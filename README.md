@@ -8,6 +8,41 @@ It prints your own text or the default text in all of the 16 terminal colors. It
 
 You can also specify if the background colors should be in columns or rows.
 
+## Installation
+
+### Prerequisites
+
+sanctity should work on any system with a shell that supports running binaries and with a terminal emulator that supports colored output.
+
+### Packages
+
+| Operating System                                     | Package Manager  | Package                     | Command                                                                           |
+| ---------------------------------------------------- | ---------------- | --------------------------- | --------------------------------------------------------------------------------- |
+| [Various][rust-platforms]                            | [Cargo][cargo]   | [sanctity][sanctity-crate]  | `cargo install sanctity`                                                          |
+| [Arch Linux][arch linux]                             | [pacman][pacman] | [sanctity][sanctity-pacman] | `git clone https://aur.archlinux.org/sanctity.git && cd sanctity && makepkg -sri` |
+| [NixOS][nixos], [Linux][nix-plat], [macOS][nix-plat] | [Nix][nix]       | [sanctity][sanctity-nixpkg] | `nix-env -iA nixos.sanctity` or `nix-env -iA nixpkgs.sanctity`                    |
+
+[rust-platforms]: https://forge.rust-lang.org/release/platform-support.html
+[cargo]: https://www.rust-lang.org
+[sanctity-crate]: https://crates.io/crates/sanctity
+[arch linux]: https://www.archlinux.org
+[pacman]: https://wiki.archlinux.org/title/Pacman
+[sanctity-pacman]: https://aur.archlinux.org/packages/sanctity
+[nixos]: https://nixos.org/nixos/
+[nix-plat]: https://nixos.org/nix/manual/#ch-supported-platforms
+[nix]: https://nixos.org/nix/
+[sanctity-nixpkg]: https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/misc/sanctity/default.nix
+
+![package version table](https://repology.org/badge/vertical-allrepos/sanctity.svg)
+
+## Running
+
+See [the installation section](#installation) for how to install sanctity on your computer.
+
+Run sanctity with `sanctity`.
+
+Use `sanctity --help` to look up how to pass options to sanctity.
+
 ## API
 
 This program uses [Semantic Versioning](https://semver.org/). Therefore an API has to be defined:
