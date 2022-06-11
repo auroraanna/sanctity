@@ -17,8 +17,8 @@ user-install:
 	@cargo install --path .
 
 system-install:
-	@cargo install --path . --root /usr
+	@cargo install --path . --root /usr --no-track
 
 # Install to a custom location
 custom-install:
-	@cargo install --path . --root "$SANCTITY_INSTALL_PATH"
+	@cargo install --path . --root "$SANCTITY_INSTALL_PATH" --no-track
